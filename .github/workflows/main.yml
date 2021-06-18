@@ -41,6 +41,6 @@ jobs:
       
       # Deploy App to Surge
       - name: Deploy Project to Surge
-        run:  surge./Project01_faizan_axiom-FSD.surge.sh --token ${{secrets.Faizan007_axiom_FSD}}
+        run:  surge./ Project01_faizan_axiom-FSD.surge.sh --token ${{secrets.Faizan}}
         
  
