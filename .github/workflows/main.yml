@@ -41,6 +41,6 @@ jobs:
       
       # Deploy App to Surge
       - name: Deploy Project to Surge
-        run:  surge./ faizan007_axiomprojects.surge.sh --token ${{Faizan}}
+        run:  surge./ faizan007_axiomprojects.surge.sh --token ${{ secrets.SURGE_TOKEN }}
         
  
