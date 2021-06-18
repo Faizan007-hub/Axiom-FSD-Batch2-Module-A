@@ -31,12 +31,16 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Installation of Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v2-beta
         with:
          node-version: '14'
          
       # Step to Install Surge
       - name: Installing Surge
         run: npm install --global surge
+      
+      # Deploy App to Surge
+      - name: Deploy Project to Surge
+        run:  surge./ faizan007_axiomprojects.surge.sh --token ${{ secrets.SURGE_TOKEN }}
         
  
