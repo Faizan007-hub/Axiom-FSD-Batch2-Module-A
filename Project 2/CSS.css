@@ -3,21 +3,34 @@
 *{
     box-sizing: border-box;
 }
+h1{
+    
+    width: max-width;
+    color: red;
+    font-size: 90px;
+    text-align: center;
+}
+h2{
+    color: black;
+}
 body{
-    background-color: #222e50;
+    background-color: #5C4D7D;
     color: wheat;
     display: flex;
     flex-direction: column;
+    font-size: larger;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: 'Lato';
+    font-family: 'Lato' sans-serif;
+    margin: 0;
+    width: max-width;
 }
 .select-container{
-    margin: 20px 0px;
+    margin: 20px 0;
 }
 .select-container select{
-    background-color: palegreen;
+    background-color: #FAE1DD;
     border: 0;
     border-radius: 5px;
     font-size: 19px;
@@ -32,38 +45,41 @@ body{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.seat.selected{
-    background-color: red;
+.row {
+    display: flex;
 }
-.seat.occupied{
-    background-color: green;
+.seat.selected {
+    background-color: #B7049C ;  
 }
-.seat:nth-of-type(2) {
+.seat.occupied {
+    background-color: #0081A7;
+}
+.seat:nth-of-type(3) {
     margin-right: 30px;
 }
-.seat:nth-last-of-type(2) {
-    margin-right: 30px;
+.seat:nth-last-of-type(3) {
+    margin-left: 30px;
 }
-.seat:hover {
+/* .seat:hover {
     cursor: pointer;
     transform: scale(1.25);
-}
+} */
 .seat:not(.occupied):hover{
     cursor: pointer;
+    transform: scale(2.01);
+}
+.legend .seat:hover {
+    cursor: default;
     transform: scale(1.25);
 }
-.legeng .seat:hover {
-    cursor: default;
-    transform: scale(1);
-}
-.legend [
-    background-color: rgb(0,0,0,0.1)
+.legend {
+    background-color: rgba(0,0,0,0.1)
     padding: 5px 10px;
-    border-radius:10px;
+    border-radius: 10;
     list-style-type:none;
     display: flex;
     justify-content: space-between;
-]
+}
 .legend li {
     display: flex;
     align-items: center;
@@ -74,12 +90,12 @@ body{
     margin-left: 5px;
 }
 .screen {
-    background-color: grey;
+    background-color: white;
     height: 80px;
     width: 100%;
     margin: 15px 0;
-    transform: rotate(-45deg);
-    box-shadow:0 3px hotpink;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.5);
 }
 .container {
     perspective: 1000px;
@@ -89,5 +105,14 @@ body{
 }
 
 p.totals span{
-    color: firebrick;
+    color: #A4133C;
 }
+h3{
+    text-align: center;
+    color: black;
+}
+
+
+
+
+
