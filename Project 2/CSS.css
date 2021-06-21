@@ -4,11 +4,12 @@
     box-sizing: border-box;
 }
 h1{
-    
+    height: max-height;
     width: max-width;
     color: red;
     font-size: 90px;
     text-align: center;
+    margin-top: 100px;
 }
 h2{
     color: black;
@@ -72,14 +73,14 @@ body{
     cursor: default;
     transform: scale(1.25);
 }
-.legend {
+/* .legend {
     background-color: rgba(0,0,0,0.1)
     padding: 5px 10px;
     border-radius: 10;
     list-style-type:none;
     display: flex;
     justify-content: space-between;
-}
+} */
 .legend li {
     display: flex;
     align-items: center;
@@ -111,8 +112,3 @@ h3{
     text-align: center;
     color: black;
 }
-
-
-
-
-
