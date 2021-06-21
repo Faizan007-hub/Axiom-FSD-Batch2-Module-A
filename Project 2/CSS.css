@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #222e50;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lato';
+}
+.select-container{
+    margin: 20px 0px;
+}
+.select-container select{
+    background-color: palegreen;
+    border: 0;
+    border-radius: 5px;
+    font-size: 19px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;    
+}
+.seat{
+    background-color: #bcd8c1;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.seat.selected{
+    background-color: red;
+}
+.seat.occupied{
+    background-color: green;
+}
+.seat:nth-of-type(2) {
+    margin-right: 30px;
+}
+.seat:nth-last-of-type(2) {
+    margin-right: 30px;
+}
+.seat:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+}
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.25);
+}
+.legeng .seat:hover {
+    cursor: default;
+    transform: scale(1);
+}
+.legend [
+    background-color: rgb(0,0,0,0.1)
+    padding: 5px 10px;
+    border-radius:10px;
+    list-style-type:none;
+    display: flex;
+    justify-content: space-between;
+]
+.legend li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.legend li small {
+    margin-left: 5px;
+}
+.screen {
+    background-color: grey;
+    height: 80px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotate(-45deg);
+    box-shadow:0 3px hotpink;
+}
+.container {
+    perspective: 1000px;
+}
+.row{
+    display: flex;
+}
+
+p.totals span{
+    color: firebrick;
+}
